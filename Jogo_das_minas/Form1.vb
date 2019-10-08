@@ -45,7 +45,7 @@
                 Quadro(li, co).coluna = co
                 Quadro(li, co).BackgroundImageLayout = ImageLayout.Stretch
                 Quadro(li, co).BorderStyle = BorderStyle.FixedSingle
-                Quadro(li, co).BackColor = Color.AliceBlue
+                Quadro(li, co).BackColor = Color.White
                 Quadro(li, co).Location = New Point(80 + 66 * co, 50 + 66 * li)
                 Quadro(li, co).Size = New Size(64, 64)
                 Quadro(li, co).Visible = True
@@ -83,5 +83,9 @@
             End Select
 
         End If
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Application.Exit()
     End Sub
 End Class
