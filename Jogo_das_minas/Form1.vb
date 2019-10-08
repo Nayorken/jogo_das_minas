@@ -35,7 +35,6 @@
         Next
         Quadro(r, c).minas = bombas
     End Sub
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For li = 0 To 8
             For co = 0 To 8
@@ -45,7 +44,7 @@
                 Quadro(li, co).coluna = co
                 Quadro(li, co).BackgroundImageLayout = ImageLayout.Stretch
                 Quadro(li, co).BorderStyle = BorderStyle.FixedSingle
-                Quadro(li, co).BackColor = Color.White
+                Quadro(li, co).BackColor = Color.BlueViolet
                 Quadro(li, co).Location = New Point(80 + 66 * co, 50 + 66 * li)
                 Quadro(li, co).Size = New Size(64, 64)
                 Quadro(li, co).Visible = True
